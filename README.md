@@ -11,8 +11,8 @@ Unicoderns Interface Component Repository
 3. Place the two projects at the same root level. For example:
 
 ```
-setup/ui/
-setup/uiExample/
+unicoderns/ui/
+unicoderns/uiExample/
 ```
 
 4. This project is built with vue.js so make sure you have already installed vue on your machine.
@@ -47,6 +47,14 @@ In order to fix the sintax of your files run the following command.
 
 ```
 npm run lint
+```
+
+### Run the project
+
+In order to run the project run the following command.
+
+```
+npm run serve
 ```
 
 ## Bugs and Features
