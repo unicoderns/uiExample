@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <ui-compone />
-    <ui-comptwo />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <AlertComponent msg="Welcome to Unicoderns Interface Component" />
+    <BadgeComponent />
+    <BreadcrumbComponent />
+    <ButtonComponent />
+    <ButtonGroupComponent />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import AlertComponent from "./components/AlertComponent.vue";
+import BadgeComponent from "./components/BadgeComponent.vue";
+import BreadcrumbComponent from "./components/BreadcrumbComponent.vue";
+import ButtonComponent from "./components/ButtonComponent.vue";
+import ButtonGroupComponent from "./components/ButtonGroupComponent.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/src/jquery.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 @Component({
   components: {
-    HelloWorld
+    AlertComponent,
+    BadgeComponent,
+    BreadcrumbComponent,
+    ButtonComponent,
+    ButtonGroupComponent
   }
 })
 export default class App extends Vue {}
@@ -26,6 +38,9 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 </style>
