@@ -3,7 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <ui-compone />
     <ui-comptwo />
-    <div class="alert alert-success" role="alert">This is a test</div>
+    <AlertComponent type="success">This is a Success alert</AlertComponent>
+    <AlertComponent type="danger">This is a Danger alert</AlertComponent>
 
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
@@ -12,10 +13,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
+import AlertComponent from "./components/AlertComponent.vue";
 
 @Component({
   components: {
-    HelloWorld
+    HelloWorld,
+    AlertComponent
   }
 })
 export default class App extends Vue {}
