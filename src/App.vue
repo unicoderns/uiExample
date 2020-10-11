@@ -3,6 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <ui-compone />
     <ui-comptwo />
+    <div class="alert alert-success" role="alert">This is a test</div>
+
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
