@@ -3,8 +3,18 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <ui-compone />
     <ui-comptwo />
-    <AlertComponent type="success">This is a Success alert</AlertComponent>
-    <AlertComponent type="danger">This is a Danger alert</AlertComponent>
+    <AlertComponent type="success"></AlertComponent>
+    <AlertComponent type="danger"></AlertComponent>
+    <AlertComponent type="warning"></AlertComponent>
+    <AlertComponent type="info"></AlertComponent>
+    <AlertComponent type="light"></AlertComponent>
+    <AlertComponent type="dark"></AlertComponent>
+    <AlertComponent type="success" href="href"></AlertComponent>
+    <AlertComponent
+      type="success"
+      aditionalContent="aditionalContent"
+    ></AlertComponent>
+    <AlertComponent type="warning" dismissing="dismissing"></AlertComponent>
 
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
