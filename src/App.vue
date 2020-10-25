@@ -14,9 +14,7 @@
       type="success"
       aditionalContent="aditionalContent"
     ></AlertComponent>
-    <AlertComponent type="warning" dismissing="dismissing"></AlertComponent>
-
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <AlertComponent type="warning" dismissing></AlertComponent>
   </div>
 </template>
 

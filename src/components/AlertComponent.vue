@@ -30,7 +30,12 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  props: ["type", "href", "aditionalContent", "dismissing"]
+  props: {
+    type: String,
+    href: String,
+    aditionalContent: String,
+    dismissing: Boolean
+  }
 })
 export default class AlertComponent extends Vue {}
 </script>
