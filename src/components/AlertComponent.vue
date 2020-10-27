@@ -1,18 +1,26 @@
 <template>
-  <div class="alert" :class="'alert-' + type" role="alert">
-    This is a test
-    <a v-if="href" href="#" class="alert-link">with link</a>
-    <div v-if="aditionalContent">
-      <h4 class="alert-heading">This is the title</h4>
-      <p>This is more content</p>
-      <hr />
-      <p class="mb-0">And more content.</p>
+  <div>
+    <div class="alert" :class="'alert-' + type" role="alert">
+      This is a test
+    </div>
+    <div v-if="href" class="alert" :class="'alert-' + type" role="alert">
+      This is test
+      <a href="#" class="alert-link">with link</a>
     </div>
     <div
-      v-if="dismissing"
-      class="alert alert-warning alert-dismissible fade show"
+      v-if="aditionalContent"
+      class="alert"
+      :class="'alert-' + type"
       role="alert"
     >
+      <div>
+        <h4 class="alert-heading">Title</h4>
+        <p>This is more content</p>
+        <hr />
+        <p class="mb-0">And more content.</p>
+      </div>
+    </div>
+    <div v-if="dismissing" class="alert" :class="'alert-' + type" role="alert">
       You should close this
       <button
         type="button"
@@ -32,8 +40,8 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
   props: {
     type: String,
-    href: String,
-    aditionalContent: String,
+    href: Boolean,
+    aditionalContent: Boolean,
     dismissing: Boolean
   }
 })
