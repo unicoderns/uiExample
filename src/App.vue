@@ -4,36 +4,36 @@
     <ui-compone />
     <ui-comptwo />
     <h3>Alerts</h3>
-    <AlertComponent type="success"></AlertComponent>
-    <AlertComponent type="danger"></AlertComponent>
-    <AlertComponent type="warning"></AlertComponent>
-    <AlertComponent type="info"></AlertComponent>
-    <AlertComponent type="light"></AlertComponent>
-    <AlertComponent type="dark"></AlertComponent>
-    <AlertComponent type="success" href></AlertComponent>
-    <AlertComponent type="success" aditionalContent></AlertComponent>
-    <AlertComponent type="warning" dismissing></AlertComponent>
+    <AlertComponent type="warning">Hello</AlertComponent>
+    <AlertComponent type="info">Hello</AlertComponent>
+    <AlertComponent type="light">Hello</AlertComponent>
+    <AlertComponent type="dark">Hello</AlertComponent>
+    <AlertComponent type="success">
+      Hello
+      <a href="www.google.com" class="alert-link">with link</a>
+    </AlertComponent>
+    <AlertComponent type="danger" dismissing>Hello</AlertComponent>
+    <AlertComponent type="success">
+      <h4 class="alert-heading">This is the title</h4>
+      <p>This is the content</p>
+      <hr />
+      <p class="mb-0">Here we have more content</p>
+    </AlertComponent>
     <h3>Badges</h3>
-    <BadgeComponent type="secondary" main></BadgeComponent>
-    <BadgeComponent type="primary" main></BadgeComponent>
-    <BadgeComponent type="success" main></BadgeComponent>
-    <BadgeComponent type="danger" main></BadgeComponent>
-    <BadgeComponent type="warning" main></BadgeComponent>
-    <BadgeComponent type="info" main></BadgeComponent>
-    <BadgeComponent type="light" main></BadgeComponent>
-    <BadgeComponent type="dark" main></BadgeComponent>
-    <BadgeComponent type="light" buttonNotification></BadgeComponent>
-    <BadgeComponent pillType="pill" type="secondary" pill></BadgeComponent>
-    <BadgeComponent pillType="pill" type="success" pill></BadgeComponent>
-    <BadgeComponent pillType="pill" type="danger" pill></BadgeComponent>
-    <BadgeComponent pillType="pill" type="warning" pill></BadgeComponent>
-    <BadgeComponent pillType="pill" type="info" pill></BadgeComponent>
-    <BadgeComponent link type="secondary"></BadgeComponent>
-    <BadgeComponent link type="success"></BadgeComponent>
-    <BadgeComponent link type="warning"></BadgeComponent>
+    <BadgeComponent main type="secondary">Simple Badge</BadgeComponent>
+    <br />
+    <button type="button" class="btn btn-primary">
+      Notifications
+      <BadgeComponent btnNotification type="light">5</BadgeComponent>
+    </button>
+    <br />
+    <BadgeComponent main type="success">Simple Badge</BadgeComponent>
+    <br />
+    <BadgeComponent main type="pill badge-dark">Simple Badge</BadgeComponent>
+    <br />
+    <BadgeComponent main type="pill badge-warning">Simple Badge</BadgeComponent>
     <h3>Breadcrumbs</h3>
-    <BreadcrumbComponent main type="active"></BreadcrumbComponent>
-    <BreadcrumbComponent href type="active"></BreadcrumbComponent>
+    <BreadcrumbComponent></BreadcrumbComponent>
   </div>
 </template>
 

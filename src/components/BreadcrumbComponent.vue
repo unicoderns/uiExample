@@ -1,20 +1,14 @@
 <template>
   <div>
-    <nav v-if="main" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li :class="'breadcrumb-item' + ' ' + type" aria-current="page">
-          Home
-        </li>
-      </ol>
-    </nav>
-    <nav v-if="href" aria-label="breadcrumb">
+    <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Home</a>
         </li>
-        <li :class="'breadcrumb-item' + ' ' + type" aria-current="page">
-          Pages
+        <li class="breadcrumb-item">
+          <a href="#">Library</a>
         </li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
       </ol>
     </nav>
   </div>
@@ -27,7 +21,8 @@ import { Component, Vue } from "vue-property-decorator";
   props: {
     type: String,
     href: Boolean,
-    main: Boolean
+    main: Boolean,
+    link: String
   }
 })
 export default class BreadcrumbComponent extends Vue {}
