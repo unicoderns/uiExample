@@ -9,8 +9,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component({
   props: {
-    type: String,
-    main: Boolean
+    type: String
   }
 })
 export default class BreadcrumbComponent extends Vue {}
