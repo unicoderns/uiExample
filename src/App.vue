@@ -33,7 +33,19 @@
     <br />
     <BadgeComponent main type="pill badge-warning">Simple Badge</BadgeComponent>
     <h3>Breadcrumbs</h3>
-    <BreadcrumbComponent></BreadcrumbComponent>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <BreadcrumbComponent type="item">
+          <a href="#">Home</a>
+        </BreadcrumbComponent>
+        <BreadcrumbComponent type="item">
+          <a href="#">Next</a>
+        </BreadcrumbComponent>
+        <BreadcrumbComponent type="item active" aria-current="page"
+          >Next</BreadcrumbComponent
+        >
+      </ol>
+    </nav>
   </div>
 </template>
 
