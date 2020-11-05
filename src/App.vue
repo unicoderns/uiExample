@@ -4,34 +4,33 @@
     <ui-compone />
     <ui-comptwo />
     <h3>Alerts</h3>
-    <AlertComponent type="warning">Hello</AlertComponent>
-    <AlertComponent type="info">Hello</AlertComponent>
-    <AlertComponent type="light">Hello</AlertComponent>
-    <AlertComponent type="dark">Hello</AlertComponent>
-    <AlertComponent type="success">
+    <AlertComponent variant="warning">Hello</AlertComponent>
+    <AlertComponent variant="info">Hello</AlertComponent>
+    <AlertComponent variant="light">Hello</AlertComponent>
+    <AlertComponent variant="dark">Hello</AlertComponent>
+    <AlertComponent variant="success">
       Hello
       <a href="www.google.com" class="alert-link">with link</a>
     </AlertComponent>
-    <AlertComponent type="danger" dismissing>Hello</AlertComponent>
-    <AlertComponent type="success">
+    <AlertComponent variant="danger" dismissing>Hello</AlertComponent>
+    <AlertComponent variant="success">
       <h4 class="alert-heading">This is the title</h4>
       <p>This is the content</p>
       <hr />
       <p class="mb-0">Here we have more content</p>
     </AlertComponent>
     <h3>Badges</h3>
-    <BadgeComponent main type="secondary">Simple Badge</BadgeComponent>
-    <br />
-    <button type="button" class="btn btn-primary">
-      Notifications
-      <BadgeComponent btnNotification type="light">5</BadgeComponent>
-    </button>
-    <br />
-    <BadgeComponent main type="success">Simple Badge</BadgeComponent>
-    <br />
-    <BadgeComponent main type="pill badge-dark">Simple Badge</BadgeComponent>
-    <br />
-    <BadgeComponent main type="pill badge-warning">Simple Badge</BadgeComponent>
+    <BadgeComponent type="regular" variant="secondary"
+      >Simple Badge</BadgeComponent
+    >
+    <BadgeComponent type="button" variant="primary"
+      >Notification 5</BadgeComponent
+    >
+    <BadgeComponent type="link" href="#" variant="success"
+      >Link Badge</BadgeComponent
+    >
+    <BadgeComponent variant="pill badge-dark">Simple Badge</BadgeComponent>
+    <BadgeComponent variant="pill badge-warning">Simple Badge</BadgeComponent>
     <h3>Breadcrumbs</h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">

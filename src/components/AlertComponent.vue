@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="alert" :class="'alert-' + type" role="alert">
+    <div class="alert" :class="'alert-' + variant" role="alert">
       <slot></slot>
       <button
         v-if="dismissing"
@@ -20,7 +20,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component({
   props: {
-    type: String,
+    variant: String,
     dismissing: Boolean
   }
 })
